@@ -96,20 +96,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  text-align:center;
+}
 
+section{
+  width:80%;
+  max-width:1000px;
+  padding: 1rem; 
+  display: inline-block;
+  border-radius: 1rem;
+  border: #ccc 2px solid;
+}
 
+h2{
+  text-align:left;
+}
 
+section.hobbies{
+  padding:0;
+}
 
-
-
-
-
-
-
-
-
-
-
+section.hobbies img{
+  float:left;
+  width:20%;
+  height:100%;
+}
 
 
 
