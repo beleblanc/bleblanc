@@ -25,33 +25,103 @@
         <header>
           <nav>
             <ul>
-              <li>Why?</li>
-              <li>Hobbies</li>
-              <li>Readings</li>
+              <li><a data-scroll-to="#why">Why?</a></li>
+              <li><a data-scroll-to="#hobbies">Hobbies</a></li>
+              <li><a data-scroll-to="#readings">Readings</a></li>
             </ul>
           </nav>
         </header>
-        
+      <main>  
         <h2>Why?</h2>
-        <section>
-          <img src="img/profile.jpg" />
-          <p></p>  
+        <section id="why">
+
+          <p>
+            <img src="img/profile.jpg" class="profile" /> 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+                    
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
         </section>
-        
+      
         <h2>Hobbies</h2>
-        <section class="interests">
-          <img src="/img/hiking.jpg" data-tooltip="" />
-          <img src="/img/hiking.jpg" data-tooltip="" />
-          <img src="/img/squash.jpg" data-tooltip="" />
-          <img src="/img/books.jpg"  data-tooltip="" />
-          <img src="/img/dining.jpg" data-tooltip="" />          
+        <section id="hobbies" class="hobbies">
+          <img src="img/hiking.jpg" data-tooltip="" />
+          <img src="img/snorkeling.jpg" data-tooltip="" />
+          <img src="img/squash.jpg" data-tooltip="" />
+          <img src="img/books.jpg"  data-tooltip="" />
+          <img src="img/dining.jpg" data-tooltip="" />          
         </section>
-        
+      
         <h2>Readings</h2>
-        <section>
+        <section id="readings">
+          <h3>Work Related</h3>
+          <dl>
+            <dt>
+              <a href="http://www.railscasts.com">
+                Railscasts
+              </a>
+            </dt>
+            <dd>
+              Probably  my most important RoR resource as Ryan covers alot of essential parts for any burgeoning rails developper.
+            </dd>
           
+          
+            <dt>
+              <a href="http://www.stackoverflow.com">
+                Stack Overflow
+              </a>
+            </dt>
+            <dd>
+              One of a programmer's most valuable resources, besides goodle that is. 
+            </dd>
+          
+          
+            <dt>
+              <a href="http://www.stackoverflow.com">
+                Linode Library
+              </a>
+            </dt>
+            <dd>
+              One of my main starting points for server setup and admin.
+            </dd>
+          </dl>
         </section>
-        
+      </main>
+      <footer>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/benoit.leblanc.1238">
+              <img src="img/facebook.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/profile/view?id=120771665">
+              <img src="img/linkedin.png"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ZenAnthro">
+              <img src="img/github.png"/> 
+            </a>
+          </li>
+          <li>
+            <div id="skype">
+              <script type="text/javascript" src="http://cdn.dev.skype.com/uri/skype-uri.js"></script>
+                <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:benoit-leblanc?chat">
+                  <img role="Button" src="img/skype.png"/>
+                </a>
+              
+            </div>
+          </li>          
+        </ul>
+      </footer>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

@@ -36,7 +36,7 @@ html {
 
 ::selection {
     background: #b3d4fc;
-    text-shadow: none;
+    text-shadow: none; 
 }
 
 /*
@@ -97,32 +97,157 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
+  background:#FFF url(../img/background.jpg);
   text-align:center;
+
+  padding-top:50px;
 }
 
-section{
+main{
+
   width:80%;
   max-width:1000px;
-  padding: 1rem; 
-  display: inline-block;
-  border-radius: 1rem;
-  border: #ccc 2px solid;
+  display:inline-block;
+  padding-bottom:2rem;
 }
 
 h2{
   text-align:left;
 }
 
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header{
+  min-height:40px;
+  background: #aaa url(../img/header_bg.png) repeat;
+  position:fixed;
+  top:0;
+  left:0.5%;
+  width:99%;
+  margin:0 auto;
+  display:inline-block;
+  box-shadow:#aaa 0px 0px 4px 2px, #222 0px -2px 4px 1px inset;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+header nav{
+  float:right;
+  margin: 0.5rem 2rem;
+
+}
+header nav ul{
+  
+}
+
+header nav ul li{
+  float:left;
+  font-weight:semi-bold;
+  font-size:1.3rem;
+  padding: 0 1rem;
+  cursor:default;
+  line-height:1em;
+
+}
+
+header a, header a:visited{
+  font-family: helvetica,sans-serif;
+  color:#aaa;
+  text-decoration:none;
+}
+
+header a:hover, header a.active{
+  color:#f7941d;
+  text-decoration:none;
+}
+
+
+/* ==========================================================================
+   SECTION
+   ========================================================================== */
+
+section{
+  width:100%;
+  text-align:justify;
+  display: inline-block;
+  background: rgba(255,255,255, 0.5);
+  border-radius: 1rem;
+  border: #aaa 1px solid;
+  box-shadow: #777 0px 0px 4px 1px;
+}
+
+section p{padding:0 0.8rem;}
+
+section dl{
+  width:33%;
+  padding:0 0.5rem;
+}
+
 section.hobbies{
   padding:0;
+  border:none;
+  
 }
 
 section.hobbies img{
   float:left;
   width:20%;
   height:100%;
+
+  display:block;
+  
 }
 
+section.hobbies img:first-child{
+  border-radius: 1rem 0 0 1rem;
+  
+}
+
+section.hobbies img:last-child{
+  border-radius: 0 1rem 1rem 0;
+  
+}
+
+section.hobbies img:hover{
+  box-shadow: rgb(200,255,255) 0px 4px 5px 1px ;
+}
+
+.profile{
+  float:left;
+  border-radius: 10rem;
+  border: 1px solid #aaa;
+  box-shadow: #999 0px 0px 4px 1px;
+
+  margin:2.5%;
+  max-width:90%;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer{
+  background: url(../img/coffee_mug.png) no-repeat bottom right,url(../img/footer_bg.jpg) repeat;
+  min-height:200px;
+  width:100%;
+  text-align:left;
+  box-shadow: 0 8px 6px -6px black inset;
+}
+
+footer ul{
+  float:left;
+  list-style:none;
+}
+
+footer ul li{
+  border-radius: 2rem;
+  float:left;
+  padding: 0 1rem;
+}
+
+footer a img:hover{
+  padding-top:5px;
+}
 
 
 /* ==========================================================================
